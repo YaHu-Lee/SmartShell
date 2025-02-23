@@ -1,0 +1,26 @@
+{
+  "name": "smartshell",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/community": "^0.3.32",
+    "@langchain/core": "^0.3.40",
+    "@langchain/langgraph": "^0.2.48",
+    "@langchain/ollama": "^0.2.0",
+    "langchain": "^0.3.19",
+    "ollama": "^0.5.13",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "typescript": "^5.7.3"
+  }
+}
