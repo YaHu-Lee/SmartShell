@@ -15,6 +15,7 @@
     "@langchain/core": "^0.3.40",
     "@langchain/langgraph": "^0.2.48",
     "@langchain/ollama": "^0.2.0",
+    "duck-duck-scrape": "^2.2.7",
     "langchain": "^0.3.19",
     "ollama": "^0.5.13",
     "zod": "^3.24.2"
