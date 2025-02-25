@@ -3,6 +3,7 @@ import { SearchApi } from "@langchain/community/tools/searchapi";
 import { z } from "zod";
 import { execSync } from "child_process";
 import { initRAG } from "./rag";
+import { shellExecutePrompt } from "./prompt";
 export const shellExecuteTool = tool(
   (input: string) => {
     console.log(`正在执行 shell 命令：${input}`);
@@ -13,8 +14,7 @@ export const shellExecuteTool = tool(
   },
   {
     name: "shellExecute",
-    description:
-      "你可以使用这个工具执行 shell 命令, 并通过返回值获取执行结果。只有需要直接操作计算机时，才使用这个工具。如文件增删改查、读取系统信息等。注意: shell 执行环境为 windows cmd 环境。",
+    description: shellExecutePrompt,
     schema: z.string(),
     responseFormat: "content",
   }
