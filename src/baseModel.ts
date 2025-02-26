@@ -5,7 +5,8 @@ import { llmKey, llmBaseURL, llmModel } from "../.llm_key.json"; // 离线模型
 
 export const offlineModel = new ChatOllama({
   model: "qwen2.5:14b", // Default value.
-  verbose: true,
+  temperature: 0.5,
+  // verbose: true,
 });
 
 export const onlineModel = new ChatOpenAI({
@@ -14,8 +15,8 @@ export const onlineModel = new ChatOpenAI({
     baseURL: llmBaseURL,
     apiKey: llmKey,
   },
-  temperature: 0,
-  verbose: true,
+  temperature: 0.5,
+  // verbose: true,
 });
 
 export const embeddings = new OllamaEmbeddings({

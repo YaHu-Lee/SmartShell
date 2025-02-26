@@ -2,20 +2,27 @@ import { HumanMessage, SystemMessage } from "@langchain/core/messages";
 import { reactAgent } from "./agent";
 import { systemPrompt } from "./prompt";
 
-// 将代码包装在异步函数中
 async function main() {
+  let humanMessage =
+    "用户还未输入任何内容，请你调用 userInput 工具询问用户有何需求";
+  const commandString = process.argv.slice(2).join(" ").trim();
+  if (commandString) {
+    humanMessage = commandString;
+  }
   const thread_id = Date.now().toString();
-  await reactAgent.invoke({
-    messages: [
-      new SystemMessage(`${systemPrompt}`),
-      new HumanMessage("删除当前文件夹下所有的 txt 文件"),
-    ],
-  }, {
-    configurable: {
-      thread_id
+  const result = await reactAgent.invoke(
+    {
+      messages: [
+        new SystemMessage(systemPrompt),
+        new HumanMessage(humanMessage),
+      ],
+    },
+    {
+      configurable: {
+        thread_id,
+      },
     }
-  });
-
+  );
+  console.log(result.messages[result.messages.length - 1].content);
 }
-
-main();
+main().then(() => process.exit(0));
