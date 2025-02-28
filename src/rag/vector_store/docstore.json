@@ -1,0 +1,214 @@
+[
+  [
+    [
+      "57812625-2590-4ebb-8fe8-0f0039fc6f37",
+      {
+        "pageContent": "Get-Help\r\n用途：获取命令的帮助信息。\r\n参数：\r\n  -Name <string>：指定要获取帮助的命令名称。\r\n  -Full：显示命令的完整帮助信息。\r\n  -Online：在浏览器中打开命令的在线帮助文档。\r\n示例：Get-Help Get-Process\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "e3c78d14-f7d2-4423-8cd8-aebdb9c6206b",
+      {
+        "pageContent": "\r\nGet-Command\r\n用途：列出所有可用的命令。\r\n参数：\r\n  -Name <string[]>：指定要查找的命令名称，支持通配符。\r\n  -CommandType <CommandTypes>：指定要查找的命令类型（如Cmdlet、Function等）。\r\n示例：Get-Command\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "852123ad-cc8a-4fdd-b71a-d9bc5837d730",
+      {
+        "pageContent": "\r\nGet-Process\r\n用途：获取当前运行的进程列表。\r\n参数：\r\n  -Name <string[]>：指定要查找的进程名称，支持通配符。\r\n  -Id <Int32[]>：指定要查找的进程ID。\r\n示例：Get-Process\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "1ea73c18-adbb-43be-99c5-8581d9c18981",
+      {
+        "pageContent": "\r\nGet-Service\r\n用途：获取当前的服务列表。\r\n参数：\r\n  -Name <string[]>：指定要查找的服务名称，支持通配符。\r\n  -ComputerName <string[]>：指定要查找的远程计算机名称。\r\n示例：Get-Service\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "536baa22-853c-4a62-8312-8f0dbf833dfa",
+      {
+        "pageContent": "\r\nSet-Service\r\n用途：启动、停止或暂停服务。\r\n参数：\r\n  -Name <string>：指定要操作的服务名称。\r\n  -Status <string>：指定服务的状态（如Running、Stopped等）。\r\n示例：Set-Service -Name \"wuauserv\" -Status Stopped\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "b60df822-ab3c-414c-b4c0-ca7ac3338f86",
+      {
+        "pageContent": "\r\nGet-EventLog\r\n用途：获取事件日志信息。\r\n参数：\r\n  -LogName <string>：指定要获取的事件日志名称。\r\n  -Newest <int>：指定要获取的最新事件数量。\r\n示例：Get-EventLog -LogName Application\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "c3a985fe-2a65-466e-999b-41c00f8b1592",
+      {
+        "pageContent": "\r\nGet-ChildItem\r\n用途：列出指定路径下的文件和文件夹。\r\n参数：\r\n  -Path <string[]>：指定要查找的路径，支持通配符。\r\n  -Recurse：递归查找子目录中的文件和文件夹。\r\n示例：Get-ChildItem C:\\Users\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "f327ee1c-faac-4b6c-b451-c64585fd7a9a",
+      {
+        "pageContent": "\r\nCopy-Item\r\n用途：复制文件和文件夹。\r\n参数：\r\n  -Path <string>：指定要复制的文件或文件夹路径。\r\n  -Destination <string>：指定复制目标路径。\r\n示例：Copy-Item C:\\file.txt D:\\file.txt\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "3013730b-8e04-455e-89de-353f21ccb621",
+      {
+        "pageContent": "\r\nMove-Item\r\n用途：移动文件和文件夹。\r\n参数：\r\n  -Path <string>：指定要移动的文件或文件夹路径。\r\n  -Destination <string>：指定移动目标路径。\r\n示例：Move-Item C:\\file.txt D:\\file.txt\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "53b3fd34-8890-4b9f-9aed-d2ad88da4324",
+      {
+        "pageContent": "\r\nRemove-Item\r\n用途：删除文件和文件夹。\r\n参数：\r\n  -Path <string>：指定要删除的文件或文件夹路径。\r\n  -Recurse：递归删除子目录中的文件和文件夹。\r\n示例：Remove-Item C:\\file.txt\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "1615d908-70dd-461d-a181-3e86af44c2c1",
+      {
+        "pageContent": "\r\nNew-Item\r\n用途：创建新的文件或文件夹。\r\n参数：\r\n  -ItemType <string>：指定要创建的项目类型（如File、Directory）。\r\n  -Path <string>：指定创建项目的路径。\r\n示例：New-Item -ItemType Directory -Path C:\\Temp\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "1246b4df-7b12-4519-9bc1-018abb6b6801",
+      {
+        "pageContent": "\r\nGet-ComputerInfo\r\n用途：获取计算机的基本信息。\r\n参数：\r\n  -Property <string[]>：指定要获取的计算机属性。\r\n示例：Get-ComputerInfo\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "9647f851-e2bf-4b8b-be72-2026a763e0b9",
+      {
+        "pageContent": "\r\nGet-NetIPConfiguration\r\n用途：提供计算机网络适配器的综合视图。\r\n参数：\r\n  -InterfaceAlias <string>：指定要查找的网络适配器别名。\r\n示例：Get-NetIPConfiguration\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "1b70aae5-a3fd-4fb7-bb55-768a7a560f66",
+      {
+        "pageContent": "\r\nTest-NetConnection\r\n用途：测试本地及远程设备之间的网络连接。\r\n参数：\r\n  -ComputerName <string>：指定要测试的远程设备名称或IP地址。\r\n  -Port <int>：指定要测试的端口号。\r\n示例：Test-NetConnection www.google.com\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "670bcba8-8119-41bf-86c0-0a7b5e011c4f",
+      {
+        "pageContent": "\r\nResolve-DnsName\r\n用途：获取与DNS相关的信息。\r\n参数：\r\n  -Name <string>：指定要解析的域名。\r\n  -Type <string>：指定要查询的DNS记录类型（如A、MX等）。\r\n示例：Resolve-DnsName www.google.com\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "ec5065aa-b680-4dae-ae43-1e72419a3bf9",
+      {
+        "pageContent": "\r\nGet-NetAdapter\r\n用途：查看网络适配器信息。\r\n参数：\r\n  -Name <string>：指定要查找的网络适配器名称。\r\n  -InterfaceIndex <int>：指定要查找的网络适配器索引。\r\n示例：Get-NetAdapter\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "5b9dfb00-d4b9-43aa-a068-0769c7feb98d",
+      {
+        "pageContent": "\r\nGet-WmiObject\r\n用途：获取计算机的硬件和软件信息。\r\n参数：\r\n  -Class <string>：指定要查询的WMI类名称。\r\n  -Namespace <string>：指定要查询的WMI命名空间。\r\n示例：Get-WmiObject -Class Win32_ComputerSystem\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "1f6c880a-d3a4-40ae-85db-220aebfdb7d6",
+      {
+        "pageContent": "\r\nSet-ExecutionPolicy\r\n用途：设置PowerShell的执行策略。\r\n参数：\r\n  -ExecutionPolicy <ExecutionPolicy>：指定要设置的执行策略（如RemoteSigned、Unrestricted等）。\r\n  -Scope <ExecutionPolicyScope>：指定执行策略的作用范围（如CurrentUser、LocalMachine等）。\r\n示例：Set-ExecutionPolicy RemoteSigned\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "51d70dbd-88ad-4954-b8ce-0fd9ed2f717a",
+      {
+        "pageContent": "\r\nInstall-Module\r\n用途：安装PowerShell模块。\r\n参数：\r\n  -Name <string>：指定要安装的模块名称。\r\n  -AllowClobber：允许覆盖已存在的模块。\r\n  -Scope <string>：指定模块的安装范围（如CurrentUser、AllUsers等）。\r\n示例：Install-Module -Name Az -AllowClobber -Scope AllUsers\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "c788a58f-f39b-43db-b24a-5b34c7b18d7b",
+      {
+        "pageContent": "\r\nImport-Module\r\n用途：导入PowerShell模块。\r\n参数：\r\n  -Name <string>：指定要导入的模块名称。\r\n  -Force：强制导入模块，即使模块已加载。\r\n示例：Import-Module -Name Az\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "4d87c410-264c-4cb6-b40d-284e3920b859",
+      {
+        "pageContent": "\r\nGet-InstalledModule\r\n用途：查看已安装的模块。\r\n参数：\r\n  -Name <string>：指定要查找的模块名称。\r\n  -AllVersions：显示所有已安装的模块版本。\r\n示例：Get-InstalledModule\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "9c0a7ab2-76d4-44ac-9dd1-2ea70081627c",
+      {
+        "pageContent": "\r\nGet-Date\r\n用途：获取当前日期和时间。\r\n参数：\r\n  -Format <string>：指定日期和时间的输出格式。\r\n  -UFormat <string>：指定日期和时间的Unix风格输出格式。\r\n示例：Get-Date\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "434a8f8e-ef48-40ed-aad6-fccd50bd6a44",
+      {
+        "pageContent": "\r\nWrite-Output\r\n用途：输出信息到控制台。\r\n参数：\r\n  -InputObject <Object>：指定要输出的对象。\r\n  -NoEnumerate：禁止枚举集合对象。\r\n示例：Write-Output \"Hello, PowerShell!\"\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "3aa21d39-a9c4-4669-b464-c2337bbeb2a0",
+      {
+        "pageContent": "\r\nWhere-Object\r\n用途：根据指定条件筛选对象。\r\n参数：\r\n  -FilterScript <ScriptBlock>：指定筛选条件的脚本块。\r\n示例：Get-Process | Where-Object { $_.CPU -gt 50 }\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "eb2cad5d-972f-4a35-9452-5facd139f493",
+      {
+        "pageContent": "\r\nSort-Object\r\n用途：对对象进行排序。\r\n参数：\r\n  -Property <string>：指定要排序的属性。\r\n  -Descending：按降序排序。\r\n示例：Get-Process | Sort-Object CPU -Descending\r\n",
+        "metadata": {}
+      }
+    ],
+    [
+      "52165ab2-7aea-474b-984f-43ebec34bfd4",
+      {
+        "pageContent": "\r\nSelect-Object\r\n用途：选择对象的特定属性。\r\n参数：\r\n  -Property <string[]>：指定要选择的属性。\r\n  -First <int>：指定要选择的前几个对象。\r\n示例：Get-Process | Select-Object -First 5",
+        "metadata": {}
+      }
+    ]
+  ],
+  {
+    "0": "57812625-2590-4ebb-8fe8-0f0039fc6f37",
+    "1": "e3c78d14-f7d2-4423-8cd8-aebdb9c6206b",
+    "2": "852123ad-cc8a-4fdd-b71a-d9bc5837d730",
+    "3": "1ea73c18-adbb-43be-99c5-8581d9c18981",
+    "4": "536baa22-853c-4a62-8312-8f0dbf833dfa",
+    "5": "b60df822-ab3c-414c-b4c0-ca7ac3338f86",
+    "6": "c3a985fe-2a65-466e-999b-41c00f8b1592",
+    "7": "f327ee1c-faac-4b6c-b451-c64585fd7a9a",
+    "8": "3013730b-8e04-455e-89de-353f21ccb621",
+    "9": "53b3fd34-8890-4b9f-9aed-d2ad88da4324",
+    "10": "1615d908-70dd-461d-a181-3e86af44c2c1",
+    "11": "1246b4df-7b12-4519-9bc1-018abb6b6801",
+    "12": "9647f851-e2bf-4b8b-be72-2026a763e0b9",
+    "13": "1b70aae5-a3fd-4fb7-bb55-768a7a560f66",
+    "14": "670bcba8-8119-41bf-86c0-0a7b5e011c4f",
+    "15": "ec5065aa-b680-4dae-ae43-1e72419a3bf9",
+    "16": "5b9dfb00-d4b9-43aa-a068-0769c7feb98d",
+    "17": "1f6c880a-d3a4-40ae-85db-220aebfdb7d6",
+    "18": "51d70dbd-88ad-4954-b8ce-0fd9ed2f717a",
+    "19": "c788a58f-f39b-43db-b24a-5b34c7b18d7b",
+    "20": "4d87c410-264c-4cb6-b40d-284e3920b859",
+    "21": "9c0a7ab2-76d4-44ac-9dd1-2ea70081627c",
+    "22": "434a8f8e-ef48-40ed-aad6-fccd50bd6a44",
+    "23": "3aa21d39-a9c4-4669-b464-c2337bbeb2a0",
+    "24": "eb2cad5d-972f-4a35-9452-5facd139f493",
+    "25": "52165ab2-7aea-474b-984f-43ebec34bfd4"
+  }
+]

@@ -22,3 +22,4 @@ export const onlineModel = new ChatOpenAI({
 export const embeddings = new OllamaEmbeddings({
   model: "nomic-embed-text",
 });
+
